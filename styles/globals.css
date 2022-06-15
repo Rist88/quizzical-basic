@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: "Inter", sans-serif;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +14,160 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Remove margins to avoid unwanted collision */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Karla", sans-serif;
+}
+/* Inter: 400, 500, 600, 700; Karla: 700; */
+
+.root {
+  margin: 0;
+}
+
+.app {
+  background-color: #f5f7fb;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.blob-top {
+  position: absolute;
+  width: 49em;
+  height: 45em;
+  right: -26em;
+  top: -54em;
+  fill: #fffad1;
+  transform: rotate(-128.49deg) scale(1.5);
+  /* transform-origin: 50% 60%; */
+  /* width: 40vmax; */
+  z-index: 0;
+}
+
+.blob-top.small {
+  right: -27.5em;
+  top: -58.5em;
+}
+
+.blob-bottom {
+  position: absolute;
+  width: 39em;
+  height: 45em;
+  left: -30em;
+  bottom: -47em;
+  fill: #deebf8;
+  transform: rotate(62.49deg) scale(1.5);
+  z-index: 0;
+}
+
+.blob-bottom.small {
+  left: -34em;
+  bottom: -52.4em;
+}
+
+.start,
+.main {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.start {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.accent-btn {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  width: max-content;
+  font-family: "Inter", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 2.4em;
+  cursor: pointer;
+}
+
+/* .start h1, .start p {
+  background: lightcoral
+} */
+
+.start button {
+  margin: 1em;
+}
+
+.main {
+  justify-content: flex-start;
+  gap: 2em;
+  padding: 2em 5em;
+  overflow-y: auto;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-align: left;
+  padding-bottom: 1.8em;
+  border-bottom: 1px #dbdef0 solid;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.answer-btn {
+  background: transparent;
+  color: #293264;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px #4d5b9e solid;
+  border-radius: 1em;
+  padding: 0.5em 1.5em;
+}
+
+.accent-btn:focus,
+.answer-btn:focus {
+  outline: 3px #94d7a2 solid;
+}
+
+.main h3 {
+  font-size: 1.5rem;
+}
+
+.check-btn {
+  align-self: center;
+}
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+
+.result strong {
+  min-width: max-content;
+  font-weight: 700;
 }
