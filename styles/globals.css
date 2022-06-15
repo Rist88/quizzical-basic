@@ -171,3 +171,19 @@ h3 {
   min-width: max-content;
   font-weight: 700;
 }
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 1.1em;
+  }
+
+  .start {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .start {
+    font-size: 1.3rem;
+  }
+}
