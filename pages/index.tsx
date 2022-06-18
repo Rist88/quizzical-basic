@@ -5,7 +5,6 @@ import Start from "../components/Start";
 import Head from "next/head";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [phase, setPhase] = useState(0);
