@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Main from "../components/Main";
 import Start from "../components/Start";
 import Head from "next/head";
-import Image from "next/image";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 import styles from "../styles/Home.module.css";
