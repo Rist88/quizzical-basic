@@ -92,7 +92,7 @@ const Home: NextPage = () => {
     setGrabQuiz(true);
   }
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>Quizzical</title>
         <meta name="description" content="Basic trivia app" />
